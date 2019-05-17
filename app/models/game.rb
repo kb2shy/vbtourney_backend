@@ -6,5 +6,6 @@ class Game < ApplicationRecord
   private
   def only_three_teams(team)
     raise Exception.new if teams.size >= LIMIT_TEAMS
+    
   end
 end

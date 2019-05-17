@@ -6,4 +6,5 @@ Rails.application.routes.draw do
       get '/profile', to: 'users#profile'
     end
   end
+  mount ActionCable.server, at: '/cable'
 end
